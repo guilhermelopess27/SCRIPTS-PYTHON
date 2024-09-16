@@ -1,0 +1,12 @@
+try:
+    nome = (input('Digite uma palavra ').upper())
+    contador = 0
+
+except (TypeError,ValueError):
+    print(' tipo de dado incorreto')
+
+for i in nome:
+    if i == 'A':
+        contador += 1
+
+print(f'a letra A aparece {contador} vezes na palavra {nome}')

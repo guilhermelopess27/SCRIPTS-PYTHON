@@ -1,0 +1,15 @@
+n = int(input("Digite um numero para saber se ele esta na sequencia fibonacci: "))
+
+a, b = 0, 1
+
+print(f'{a},{b}',)
+
+while a < n:
+    a, b = b, a + b
+    print('{}'.format(a+b),)
+
+if a == n:
+    print("o numero pertence a sequencia Fibonacci")
+elif a > n:
+    print('o numero nao pertence a sequencia Fibonacci')
+
